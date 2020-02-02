@@ -2,6 +2,7 @@ package Oefening1Rekenen;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 
 public class Controller {
     public Label lblUitkomst;
@@ -12,6 +13,12 @@ public class Controller {
         double dResult;
         dResult= num1-num2;
         lblUitkomst.setText(String.valueOf(dResult));
-        System.out.println("test");
+    }
+
+    public void btnMin(MouseEvent mouseEvent) {
+        Double Dnum1,Dnum2;
+        Dnum1=Double.parseDouble(txtGetal1.getText());
+        Dnum2=Double.parseDouble(txtGetal2.getText());
+        myMinFunction(Dnum1,Dnum2);
     }
 }
