@@ -12,5 +12,6 @@ public class Controller {
         double dResult;
         dResult= num1-num2;
         lblUitkomst.setText(String.valueOf(dResult));
+        System.out.println("test");
     }
 }
