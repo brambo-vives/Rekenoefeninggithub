@@ -4,6 +4,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
+import javax.swing.*;
+
 public class Controller {
     public Label lblUitkomst;
     public TextField txtGetal1;
@@ -16,9 +18,13 @@ public class Controller {
     }
 
     public void btnMin(MouseEvent mouseEvent) {
-        Double Dnum1,Dnum2;
-        Dnum1=Double.parseDouble(txtGetal1.getText());
-        Dnum2=Double.parseDouble(txtGetal2.getText());
-        myMinFunction(Dnum1,Dnum2);
+        Double Dnum1, Dnum2;
+        try {
+            Dnum1 = Double.parseDouble(txtGetal1.getText());
+            Dnum2 = Double.parseDouble(txtGetal2.getText());
+            myMinFunction(Dnum1, Dnum2);
+        } catch (NumberFormatException exc1) {
+            JOptionPane.showMessageDialog(null,"gelieve enkel cijfers te gebruiken");
+        }
     }
 }
