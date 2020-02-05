@@ -15,11 +15,20 @@ public class Controller {
 
     //Fucntie voor maal
     private void FunctieMaal() {
-        double dGetal1 = Double.parseDouble(txtGetal1.getText());
-        double dGetal2 = Double.parseDouble(txtGetal2.getText());
+        try {
+            double dGetal1 = Double.parseDouble(txtGetal1.getText());
+            double dGetal2 = Double.parseDouble(txtGetal2.getText());
 
-        double dMaal = dGetal1 * dGetal2;
+            double dMaal = dGetal1 * dGetal2;
 
-        lblUitkomst.setText(String.valueOf(dMaal));
-    }
+            lblUitkomst.setText(String.valueOf(dMaal));
+        }
+        catch (NumberFormatException nfex)
+        {
+            lblUitkomst.setText("Gelieve enkel cijfers te gebruiken");
+        }
+        }
+
 }
+
+
