@@ -4,15 +4,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Oefening1Rekenen.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Oefening1Rekenen.Controller">
    <children>
-      <Label fx:id="lblUitkomst" layoutX="160.0" layoutY="409.0" prefHeight="36.0" prefWidth="71.0" text="Uitkomst" />
+      <Label fx:id="lblUitkomst" layoutX="186.0" layoutY="321.0" prefHeight="39.0" prefWidth="97.0" text="Uitkomst Hier" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
       <TextField fx:id="txtGetal1" layoutX="102.0" layoutY="83.0" />
       <TextField fx:id="txtGetal2" layoutX="102.0" layoutY="203.0" />
-      <Label layoutX="125.0" layoutY="29.0" prefHeight="17.0" prefWidth="98.0" text="Getal 1" />
-      <Label layoutX="97.0" layoutY="160.0" prefHeight="17.0" prefWidth="98.0" text="Getal 2" />
-      <Button layoutX="535.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#btnPlus" text="Plus" />
-      <Button layoutX="373.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#btnMin" prefHeight="26.0" prefWidth="27.0" text="-" />
+      <Label layoutX="29.0" layoutY="85.0" prefHeight="22.0" prefWidth="71.0" text="Getal 1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="204.0" prefHeight="22.0" prefWidth="71.0" text="Getal 2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="319.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#btnPlus" prefHeight="26.0" prefWidth="27.0" text="+" />
+      <Button layoutX="319.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#btnMin" prefHeight="26.0" prefWidth="27.0" text="-" />
+      <Label layoutX="192.0" layoutY="14.0" text="Calculator">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

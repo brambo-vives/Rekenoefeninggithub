@@ -14,8 +14,9 @@ public class Controller {
     public void btnPlus(MouseEvent mouseEvent) {
         plus();
     }
-   public void  plus() {
-            double Getaluitkomst;
+
+    public void plus() {
+        double Getaluitkomst;
         try {
             Getaluitkomst = Double.valueOf(txtGetal1.getText()) + Double.valueOf(txtGetal2.getText());
             lblUitkomst.setText(String.valueOf(Getaluitkomst));
@@ -23,22 +24,22 @@ public class Controller {
             JOptionPane.showMessageDialog(null, "gelieve een getal op te geven");
         }
     }
-    
-    public void myMinFunction(double num1,double num2){
+
+    public void myMinFunction(double num1, double num2) {
         double dResult;
-        dResult= num1-num2;
+        dResult = num1 - num2;
         lblUitkomst.setText(String.valueOf(dResult));
     }
 
     public void btnMin(MouseEvent mouseEvent) {
         try {
-        Double Dnum1, Dnum2;
+            Double Dnum1, Dnum2;
             Dnum1 = Double.parseDouble(txtGetal1.getText());
             Dnum2 = Double.parseDouble(txtGetal2.getText());
             myMinFunction(Dnum1, Dnum2);
             JOptionPane.showMessageDialog(null, "just for testing purposes");
         } catch (NumberFormatException exc1) {
-            JOptionPane.showMessageDialog(null,"gelieve enkel cijfers te gebruiken");
+            JOptionPane.showMessageDialog(null, "gelieve enkel cijfers te gebruiken");
         }
     }
 }
