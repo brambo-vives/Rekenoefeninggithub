@@ -23,6 +23,7 @@ public class Controller {
             Dnum1 = Double.parseDouble(txtGetal1.getText());
             Dnum2 = Double.parseDouble(txtGetal2.getText());
             myMinFunction(Dnum1, Dnum2);
+            JOptionPane.showMessageDialog(null, "just for testing purposes");
         } catch (NumberFormatException exc1) {
             JOptionPane.showMessageDialog(null,"gelieve enkel cijfers te gebruiken");
         }
