@@ -10,25 +10,25 @@ public class Controller {
     public TextField txtGetal2;
 
     public void clicked_Maal(MouseEvent mouseEvent) {
-        FunctieMaal();
+        FunctieDelen();
     }
 
-    //Fucntie voor maal
-    private void FunctieMaal() {
-        try {
+    //Fucntie voor delen
+    private void FunctieDelen() {
+        try
+        {
             double dGetal1 = Double.parseDouble(txtGetal1.getText());
             double dGetal2 = Double.parseDouble(txtGetal2.getText());
 
-            double dMaal = dGetal1 * dGetal2;
+            double dDelen = dGetal1 / dGetal2;
 
-            lblUitkomst.setText(String.valueOf(dMaal));
+            lblUitkomst.setText(String.valueOf(dDelen));
         }
         catch (NumberFormatException nfex)
         {
             lblUitkomst.setText("Gelieve enkel cijfers te gebruiken");
         }
-        }
-
+    }
 }
 
 
