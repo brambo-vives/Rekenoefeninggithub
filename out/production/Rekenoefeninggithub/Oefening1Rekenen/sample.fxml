@@ -12,6 +12,10 @@
       <TextField fx:id="txtGetal2" layoutX="102.0" layoutY="203.0" />
       <Label layoutX="125.0" layoutY="29.0" prefHeight="17.0" prefWidth="98.0" text="Getal 1" />
       <Label layoutX="97.0" layoutY="160.0" prefHeight="17.0" prefWidth="98.0" text="Getal 2" />
+<<<<<<< HEAD
       <Button layoutX="535.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#btnPlus" text="Plus" />
+=======
+      <Button layoutX="373.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#btnMin" prefHeight="26.0" prefWidth="27.0" text="-" />
+>>>>>>> minFunctie
    </children>
 </AnchorPane>
